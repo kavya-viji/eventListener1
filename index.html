@@ -1,0 +1,30 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>Event Listeners</title>
+
+</head>
+<body>
+	
+	<div id="l1" style="background-color:salmon;height:100px;width:100px"></div><br>
+	<div id="l2" style="background-color:peru;height:100px;width:100px"></div>
+	
+	<script>
+		document.getElementById("l1").onclick=clickme;
+		document.getElementById("l1").innerHTML="kavya"
+		function clickme()
+		{
+			alert("Mouse is clicked");
+		}
+		
+		document.getElementById("l2").innerHTML="kannan"
+		document.getElementById("l2").onmouseover=function mouseover() //anonymous
+		
+		{
+			alert("The mouse is hovered")
+		};
+		
+		
+		</script>
+</body>
+</html>
